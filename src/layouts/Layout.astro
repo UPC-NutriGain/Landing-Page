@@ -1,6 +1,7 @@
 ---
 import Footer from "@components/Footer.astro"
 import Header from "@components/Header.astro"
+import "@styles/global.css"
 ---
 
 <!doctype html>
@@ -23,12 +24,20 @@ import Header from "@components/Header.astro"
 			name="description"
 			content="Escoge un camino nutricional y SÉ TU MEJOR VERSIÓN. Organiza tu dieta y rutina de ejercicios entre MÁS DE 1000 COMBINACIONES POSIBLES."
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>
+	<body class="scroll-smooth">
 		<Header />
 		<slot />
 		<Footer />
 	</body>
 </html>
-
-<style></style>
